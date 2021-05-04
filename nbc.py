@@ -124,10 +124,8 @@ print( 'Neg f-1 score:', f_measure(refsets["Negative"], testsets["Negative"]) )
 
 print("Accuracy of the model:", classify.accuracy(classifier, test_data))
 
-#print(classifier.show_most_informative_features(10))
-
 from nltk.tokenize import word_tokenize
-testinput = "ugh so gross!"
+testinput = "ugh so gross!" #can customise sentence here
 
 custom_tokens = remove_noise(word_tokenize(testinput))
 print("Customised Sentence:", testinput)
